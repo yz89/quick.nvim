@@ -1,6 +1,6 @@
 require('basics')
 require('colors')
-require('telescope-config')
+-- require('telescope-config')
 require('coc-config')
 require('lualine').setup()
 
@@ -20,19 +20,23 @@ require'nvim-treesitter.configs'.setup {
 return require('packer').startup(function()
   use 'wbthomason/packer.nvim'
   use {'neoclide/coc.nvim', branch = 'release'}
-  use 'folke/tokyonight.nvim'
+  use 'morhetz/gruvbox'
   use 'nvim-treesitter/nvim-treesitter' 
   use 'tpope/vim-commentary'
   use 'JoosepAlviste/nvim-ts-context-commentstring'
   use 'ThePrimeagen/git-worktree.nvim'
+  -- use 'liuchengxu/eleline.vim'
+  use 'vim-airline/vim-airline'
+  use 'ryanoasis/vim-devicons'
+  use 'lambdalisue/glyph-palette.vim'
   use {
     'nvim-lualine/lualine.nvim',
     requires = {'kyazdani42/nvim-web-devicons', opt = true}
   }
-  use {
-    'nvim-telescope/telescope.nvim',
-    requires = { {'nvim-lua/plenary.nvim'} }
-  }
+  -- use {
+  --   'nvim-telescope/telescope.nvim',
+  --   requires = { {'nvim-lua/plenary.nvim'} }
+  -- }
   use {
     "blackCauldron7/surround.nvim",
     config = function()

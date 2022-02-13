@@ -1,5 +1,5 @@
-vim.g.mapleader = " "
-vim.o.number  =true
+vim.g.mapleader = ','
+vim.o.number  = true
 vim.o.relativenumber = true
 vim.o.wrap = false
 vim.o.expandtab = true
@@ -21,7 +21,11 @@ vim.o.showmode = false
 vim.o.showtabline = 2
 vim.o.signcolumn = 'yes'
 vim.o.mouse = 'a'
+vim.o.clipboard = 'unnamedplus'
+vim.o.clipboard = 'unnamed'
 
+vim.api.nvim_set_keymap('n', '<leader>q', ':q<CR>', { noremap = true })
+vim.api.nvim_set_keymap('n', '<leader>w', ':w<CR>', { noremap = true })
 vim.api.nvim_set_keymap('n', 'vs', ':vs<CR>', { noremap = true })
 vim.api.nvim_set_keymap('n', 'sp', ':sp<CR>', { noremap = true })
 vim.api.nvim_set_keymap('n', '<C-L>', '<C-W><C-L>', { noremap = true })
@@ -33,7 +37,6 @@ vim.api.nvim_set_keymap('n', 'tk', ':tabnext<CR>', { noremap = true })
 vim.api.nvim_set_keymap('n', 'tj', ':tabprev<CR>', { noremap = true })
 vim.api.nvim_set_keymap('n', 'to', ':tabo<CR>', { noremap = true })
 vim.api.nvim_set_keymap('n', '<C-S>', ':%s/', { noremap = true })
-vim.api.nvim_set_keymap('n', '<C-N>', ":Lexplore<CR> :vertical resize 30<CR>", { noremap = true })
 vim.api.nvim_set_keymap("n", "<leader>t", ":sp<CR> :term<CR> :resize 20N<CR> i", {noremap = true, silent = true})
 vim.api.nvim_set_keymap("t", "<Esc>", "<C-\\><C-n>", {noremap = true, silent = true})
 

@@ -1,0 +1,5 @@
+{
+  "coc.preferences.enableFloatHighlight": true,
+  "explorer.icon.enableNerdfont": true,
+  "explorer.icon.source": "builtin"
+}
