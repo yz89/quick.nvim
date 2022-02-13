@@ -1,6 +1,5 @@
 require('basics')
 require('colors')
--- require('telescope-config')
 require('coc-config')
 require('lualine').setup()
 
@@ -27,16 +26,11 @@ return require('packer').startup(function()
   use 'ThePrimeagen/git-worktree.nvim'
   -- use 'liuchengxu/eleline.vim'
   use 'vim-airline/vim-airline'
-  use 'ryanoasis/vim-devicons'
-  use 'lambdalisue/glyph-palette.vim'
+  use 'vim-scripts/easymotion'
   use {
     'nvim-lualine/lualine.nvim',
     requires = {'kyazdani42/nvim-web-devicons', opt = true}
   }
-  -- use {
-  --   'nvim-telescope/telescope.nvim',
-  --   requires = { {'nvim-lua/plenary.nvim'} }
-  -- }
   use {
     "blackCauldron7/surround.nvim",
     config = function()
