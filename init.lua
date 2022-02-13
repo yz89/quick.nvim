@@ -26,7 +26,7 @@ return require('packer').startup(function()
   use 'ThePrimeagen/git-worktree.nvim'
   -- use 'liuchengxu/eleline.vim'
   use 'vim-airline/vim-airline'
-  use 'vim-scripts/easymotion'
+  use 'easymotion/vim-easymotion'
   use {
     'nvim-lualine/lualine.nvim',
     requires = {'kyazdani42/nvim-web-devicons', opt = true}
