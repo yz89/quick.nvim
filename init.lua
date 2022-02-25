@@ -1,6 +1,7 @@
 require('basics')
 require('colors')
 require('coc-config')
+require('easy-motion-config')
 require('lualine').setup()
 
 require'nvim-treesitter.configs'.setup {
@@ -20,10 +21,11 @@ return require('packer').startup(function()
   use 'wbthomason/packer.nvim'
   use {'neoclide/coc.nvim', branch = 'release'}
   use 'morhetz/gruvbox'
-  use 'nvim-treesitter/nvim-treesitter' 
+  use 'nvim-treesitter/nvim-treesitter'
   use 'tpope/vim-commentary'
   use 'JoosepAlviste/nvim-ts-context-commentstring'
   use 'ThePrimeagen/git-worktree.nvim'
+  use 'tpope/vim-fugitive'
   -- use 'liuchengxu/eleline.vim'
   use 'vim-airline/vim-airline'
   use 'easymotion/vim-easymotion'
