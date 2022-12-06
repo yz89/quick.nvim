@@ -1,5 +1,14 @@
 {
-  "coc.preferences.enableFloatHighlight": true,
+  "languageserver": {
+    "solidity": {
+      "command": "solsp",
+      "args": ["--stdio"],
+      "rootPatterns": [".git/"],
+      "trace.server": "verbose",
+      "filetypes": ["solidity"]
+    }
+  },
+  "coc.preferences.enableMessageDialog": false,
   "explorer.icon.enableNerdfont": true,
   "rust-analyzer.diagnostics.disabled": [
     "unresolved-proc-macro",
@@ -8,5 +17,8 @@
   "rust-analyzer.checkOnSave.enable": false,
   "toml.formatter.reorderKeys": true,
   "toml.formatter.alignEntries": true,
-  "Lua.diagnostics.disable": ["undefined-global"]
+  "Lua.diagnostics.disable": [
+    "undefined-global"
+  ],
+  "Lua.telemetry.enable": false
 }

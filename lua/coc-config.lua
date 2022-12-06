@@ -11,6 +11,7 @@ vim.api.nvim_set_keymap("i", "<CR>", "pumvisible() ? coc#_select_confirm() : '<C
 vim.api.nvim_set_keymap("n", "<C-e>", ":CocCommand explorer<CR>", { noremap = true })
 vim.api.nvim_set_keymap('n', '<C-P>', ":CocList files<CR>", { noremap = true })
 vim.api.nvim_set_keymap('n', '<Space>e', ":CocList buffers<CR>", { noremap = true })
+vim.api.nvim_set_keymap('n', '<Space>f', ":CocList grep<CR>", { noremap = true })
 
 vim.o.hidden = true
 vim.o.backup = false
@@ -30,7 +31,7 @@ vim.g.coc_global_extensions = {
 	'coc-jest',
 	'coc-json',
 	'coc-lists',
-  'coc-lua',
+  'coc-sumneko-lua',
 	'coc-prettier',
 	'coc-pyright',
   'coc-rust-analyzer',
