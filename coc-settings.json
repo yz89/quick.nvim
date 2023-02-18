@@ -8,17 +8,17 @@
       "filetypes": ["solidity"]
     }
   },
+  "prettier.prettierPath": "~/.config/yarn/global/node_modules/prettier",
   "coc.preferences.enableMessageDialog": false,
+  "coc.source.buffer.enable": false,
   "explorer.icon.enableNerdfont": true,
   "rust-analyzer.diagnostics.disabled": [
     "unresolved-proc-macro",
     "macro-error"
   ],
   "rust-analyzer.checkOnSave.enable": false,
+  "rust-analyzer.updates.checkOnStartup": false,
   "toml.formatter.reorderKeys": true,
   "toml.formatter.alignEntries": true,
-  "Lua.diagnostics.disable": [
-    "undefined-global"
-  ],
   "Lua.telemetry.enable": false
 }
